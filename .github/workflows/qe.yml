@@ -91,7 +91,7 @@ jobs:
             fi
             echo "   $(grep -c . "$out") lines, $(date -u +%H:%M:%S)"
           done
-          grep -A5 "total stress" *.out | tail -20
+          grep -A5 "total stress" *.out | tail -20 || true
 
       - name: Upload outputs
         if: always()
