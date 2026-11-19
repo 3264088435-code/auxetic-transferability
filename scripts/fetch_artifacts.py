@@ -9,22 +9,24 @@ import argparse
 import io
 import json
 import os
-import urllib.request
 import zipfile
+
+import requests
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 API = "https://api.github.com/repos/3264088435-code/auxetic-transferability"
+HEAD = {"Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "doubao-qe"}
 
 
 def get(url, token):
-    req = urllib.request.Request(url, headers={
-        "Authorization": f"Bearer {token}",
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "doubao-qe",
-    })
-    with urllib.request.urlopen(req, timeout=180) as r:
-        return r.read()
+    # requests 会在跨主机重定向时丢掉 Authorization，artifact 又必须走一次
+    # 签名 URL 的 302，所以这里不能用裸 urllib（会把头带过去，回 401）
+    r = requests.get(url, headers={**HEAD, "Authorization": f"Bearer {token}"},
+                     timeout=300, allow_redirects=True)
+    r.raise_for_status()
+    return r.content
 
 
 def main():
