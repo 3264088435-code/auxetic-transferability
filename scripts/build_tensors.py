@@ -123,17 +123,17 @@ def main():
 
     groups = {}
     for r in rows:
-        groups.setdefault((r["material"], int(r["k"]), r["dft"]), {})[int(r["mode"])] = \
+        groups.setdefault((r["material"], int(r["k"]), r["dft"], r.get("h", "0.01")), {})[int(r["mode"])] = \
             [float(v) for v in r["C_col"].split()]
 
     out = []
-    for (mat, k, dft), cols in sorted(groups.items()):
+    for (mat, k, dft, h), cols in sorted(groups.items()):
         if mat in ("HfRh", "InP") and set(cols) == {0, 3}:
             C = cubic_from_columns(cols)
         elif len(cols) < 6:
             # 立方只算 j=0/j=3，其余晶系要 6 列；列不齐就不要硬拼，投影会把
             # 缺列平均成假分量（C11 会塌成几十 GPa 那种胡数）
-            print(f"skip {mat} k={k} {dft}: only {len(cols)} column(s) {sorted(cols)}")
+            print(f"skip {mat} k={k} {dft} h={h}: only {len(cols)} column(s) {sorted(cols)}")
             continue
         else:
             C = np.zeros((6, 6))
@@ -145,7 +145,7 @@ def main():
         eig = np.linalg.eigvalsh(C)
         born = bool(eig.min() > 0)
         nu_min, nu_max = nu_extremes(C) if born else (float("nan"), float("nan"))
-        rec = dict(material=mat, k=k, dft=dft, n_modes=len(cols),
+        rec = dict(material=mat, k=k, dft=dft, h=float(h), n_modes=len(cols),
                    min_eig=round(float(eig.min()), 2), born=born,
                    nu_min=round(nu_min, 4), nu_max=round(nu_max, 4),
                    C11=round(C[0, 0], 1), C22=round(C[1, 1], 1), C33=round(C[2, 2], 1),
@@ -158,7 +158,7 @@ def main():
         print(json.dumps(rec, ensure_ascii=False))
 
     path = os.path.join(ROOT, "results", "tensors.csv")
-    keys = ["material", "k", "dft", "n_modes", "min_eig", "born", "nu_min", "nu_max",
+    keys = ["material", "k", "dft", "h", "n_modes", "min_eig", "born", "nu_min", "nu_max",
             "C11", "C22", "C33", "C12", "C13", "C23", "C44", "C55", "C66"]
     extra = [k for k in ("Cp", "cubic_thr") if any(k in r for r in out)]
     with open(path, "w", newline="", encoding="utf-8") as f:
@@ -171,3 +171,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
