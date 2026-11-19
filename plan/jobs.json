@@ -125,6 +125,34 @@
   ]
  },
  {
+  "job": "A_hfrh_k24_rlx_d020_pbe_j0",
+  "layer": "A",
+  "material": "HfRh",
+  "k": 24,
+  "degauss": 0.02,
+  "dft": "PBE",
+  "mode": 0,
+  "h": 0.001,
+  "files": [
+   "m.in",
+   "p.in"
+  ]
+ },
+ {
+  "job": "A_hfrh_k24_rlx_d020_pbe_j3",
+  "layer": "A",
+  "material": "HfRh",
+  "k": 24,
+  "degauss": 0.02,
+  "dft": "PBE",
+  "mode": 3,
+  "h": 0.001,
+  "files": [
+   "m.in",
+   "p.in"
+  ]
+ },
+ {
   "job": "B_bn_k12_d020_pbe_j0",
   "layer": "B",
   "material": "BN",
