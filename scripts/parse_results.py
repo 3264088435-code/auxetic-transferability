@@ -58,7 +58,8 @@ def main():
         if jid not in meta:
             continue
         sm = stress_block(os.path.join(d, "m.out"))
-        sp = stress_block(os.path.join(d, "p.out"))        if sm is None or sp is None:
+        sp = stress_block(os.path.join(d, "p.out"))
+        if sm is None or sp is None:
             print(f"!! {jid}: missing stress block")
             continue
         col = [(p - m) / (2 * float(meta[jid].get("h", 0.01))) for m, p in zip(sm, sp)]
@@ -69,7 +70,7 @@ def main():
         rows.append(rec)
 
     out = os.path.join(ROOT, "results", "qe_summary.csv")
-    keys = ["job", "layer", "material", "k", "degauss", "dft", "mode", "h",
+    keys = ["job", "layer", "material", "k", "degauss", "dft", "mode", "h", "cell",
             "sigma_m", "sigma_p", "C_col"]
     with open(out, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=keys)
