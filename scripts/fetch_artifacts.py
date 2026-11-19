@@ -1,0 +1,63 @@
+"""Download every artifact of one workflow run into results/<job>/.
+
+    set GH_TOKEN=...            (PowerShell: $env:GH_TOKEN = "github_pat_...")
+    python scripts/fetch_artifacts.py --run 44456107387
+
+Each artifact holds m.out / p.out for one job id.
+"""
+import argparse
+import io
+import json
+import os
+import urllib.request
+import zipfile
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+API = "https://api.github.com/repos/3264088435-code/auxetic-transferability"
+
+
+def get(url, token):
+    req = urllib.request.Request(url, headers={
+        "Authorization": f"Bearer {token}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "doubao-qe",
+    })
+    with urllib.request.urlopen(req, timeout=180) as r:
+        return r.read()
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--run", required=True)
+    args = ap.parse_args()
+    token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+    if not token:
+        raise SystemExit("GH_TOKEN not set")
+
+    out_root = os.path.join(ROOT, "results")
+    os.makedirs(out_root, exist_ok=True)
+
+    arts, page = [], 1
+    while True:
+        data = json.loads(get(f"{API}/actions/runs/{args.run}/artifacts?per_page=100&page={page}", token))
+        arts += data["artifacts"]
+        if len(data["artifacts"]) < 100:
+            break
+        page += 1
+
+    print(f"artifacts: {len(arts)}")
+    for a in arts:
+        name = a["name"]
+        d = os.path.join(out_root, name)
+        if os.path.exists(os.path.join(d, "p.out")) and os.path.exists(os.path.join(d, "m.out")):
+            continue
+        blob = get(f"{API}/actions/artifacts/{a['id']}/zip", token)
+        os.makedirs(d, exist_ok=True)
+        with zipfile.ZipFile(io.BytesIO(blob)) as z:
+            z.extractall(d)
+        print(f"  {name}: {os.listdir(d)}")
+
+
+if __name__ == "__main__":
+    main()
