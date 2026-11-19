@@ -1,0 +1,45 @@
+&CONTROL
+ calculation='vc-relax'
+ restart_mode='from_scratch'
+ etot_conv_thr=1.0d-5
+ forc_conv_thr=1.0d-4
+ prefix='A_hfrh_k24_relax'
+ outdir='./tmp'
+ pseudo_dir='./pseudo'
+ tstress=.true.
+ tprnfor=.true.
+ disk_io='none'
+ verbosity='low'
+/
+&SYSTEM
+ ibrav=0
+ nat=2
+ ntyp=2
+ ecutwfc=60.0
+ ecutrho=480.0
+ input_dft='PBE'
+ occupations='smearing', smearing='mv', degauss=0.020
+/
+&ELECTRONS
+ conv_thr=1.0d-8
+ mixing_beta=0.4
+/
+&IONS
+ ion_dynamics='bfgs'
+/
+&CELL
+ cell_dynamics='bfgs'
+ press_conv_thr=0.1
+/
+ATOMIC_SPECIES
+ Hf  178.490 Hf.pbe-spn-kjpaw_psl.1.0.0.UPF
+ Rh  102.906 Rh.pbe-spn-kjpaw_psl.1.0.0.UPF
+CELL_PARAMETERS angstrom
+ 3.249047000 0.000000000 0.000000000
+ 0.000000000 3.249047000 0.000000000
+ 0.000000000 0.000000000 3.249047000
+ATOMIC_POSITIONS crystal
+ Hf  0.000000000 0.000000000 0.000000000
+ Rh  0.500000000 0.500000000 0.500000000
+K_POINTS automatic
+ 24 24 24 0 0 0
