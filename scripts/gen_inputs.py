@@ -69,6 +69,9 @@ A_SETTINGS = [
     dict(k=24, degauss=0.010, dft="PBE", h=0.001),
 ]
 
+# 几何控制：vc-relax 得到本管线自己的平衡胞，再在该胞上测 C'
+RELAX_CELL = os.path.join(ROOT, "structures", "hfrh_relaxed_cell.json")
+
 
 def strain(j, s, h=H):
     eps = [[0.0] * 3 for _ in range(3)]
@@ -85,10 +88,14 @@ def deformed(cell, eps):
              for n in range(3)] for i in range(3)]
 
 
-def write_input(path, *, prefix, dft, k, degauss, cell, sites, species):
+def write_input(path, *, prefix, dft, k, degauss, cell, sites, species, calc="scf"):
     lines = ["&CONTROL",
-             " calculation='scf'",
-             f" prefix='{prefix}'",
+             f" calculation='{calc}'"]
+    if calc != "scf":
+        lines += [" restart_mode='from_scratch'",
+                  " etot_conv_thr=1.0d-5",
+                  " forc_conv_thr=1.0d-4"]
+    lines += [f" prefix='{prefix}'",
              " outdir='./tmp'",
              " pseudo_dir='./pseudo'",
              " tstress=.true.",
@@ -108,8 +115,11 @@ def write_input(path, *, prefix, dft, k, degauss, cell, sites, species):
              "&ELECTRONS",
              f" conv_thr={CONV_THR}",
              f" mixing_beta={MIXING_BETA}",
-             "/",
-             "ATOMIC_SPECIES"]
+             "/"]
+    if calc != "scf":
+        lines += ["&IONS", " ion_dynamics='bfgs'", "/",
+                  "&CELL", " cell_dynamics='bfgs'", " press_conv_thr=0.1", "/"]
+    lines += ["ATOMIC_SPECIES"]
     for sym in species:
         lines.append(f" {sym:<3} {Element(sym).atomic_mass:.3f} {UPF[sym]}")
     lines.append("CELL_PARAMETERS angstrom")
@@ -163,6 +173,24 @@ def main():
             meta = dict(name=HFRH["name"], k=st["k"], degauss=st["degauss"], dft=st["dft"])
             emit(jobs, jid, "A", meta, HFRH["cell"], HFRH["sites"], a_species,
                  [j], ROOT, h=h)
+
+    # ---- A 层几何控制 ----
+    wdir = os.path.join(ROOT, "runs", "A_hfrh_k24_relax")
+    os.makedirs(wdir, exist_ok=True)
+    write_input(os.path.join(wdir, "r.in"), prefix="A_hfrh_k24_relax", dft="PBE", k=24,
+                degauss=0.020, cell=HFRH["cell"], sites=HFRH["sites"],
+                species=a_species, calc="vc-relax")
+    with open(os.path.join(wdir, "pseudo.list"), "w", encoding="utf-8", newline="\n") as f:
+        f.write("\n".join(UPF[s] for s in a_species) + "\n")
+    jobs.append(dict(job="A_hfrh_k24_relax", layer="A", material="HfRh", k=24,
+                     degauss=0.020, dft="PBE", mode=-1, h=0.0, files=["r.in"]))
+
+    if os.path.exists(RELAX_CELL):
+        cell = json.load(open(RELAX_CELL, encoding="utf-8"))["cell"]
+        meta = dict(name="HfRh", k=24, degauss=0.020, dft="PBE")
+        for j in HFRH["modes"]:
+            jid = f"A_hfrh_k24_rlx_d020_pbe_j{j}"
+            emit(jobs, jid, "A", meta, cell, HFRH["sites"], a_species, [j], ROOT, h=0.001)
 
     # ---- B and C layers ----
     for layer, grids in (("B", (6, 12, 16)), ("C", (24,))):
