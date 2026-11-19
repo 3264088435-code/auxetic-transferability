@@ -73,13 +73,17 @@ jobs:
           set -euo pipefail
           export PATH="$RUNNER_TEMP/qe/bin:$PATH"
           export OMP_NUM_THREADS=1
+          echo "cores=$(nproc) mem=$(free -g | awk '/Mem:/{print $2}')G disk=$(df -h . | awk 'NR==2{print $4}')"
+          NP=$(nproc)
           cd "runs/${{ matrix.job }}"
           for f in *.in; do
             out="${f%.in}.out"
-            echo "##### $f  $(date -u +%H:%M:%S)"
+            echo "##### $f  $(date -u +%H:%M:%S)  np=$NP"
             if command -v mpirun >/dev/null 2>&1; then
-              mpirun -np 4 pw.x -in "$f" > "$out" 2>&1 || true
-            else
+              mpirun -np "$NP" --map-by :OVERSUBSCRIBE pw.x -in "$f" > "$out" 2>&1 || true
+            fi
+            if [ ! -s "$out" ] || ! grep -q "JOB DONE" "$out"; then
+              echo "   (serial retry)"
               pw.x -in "$f" > "$out" 2>&1 || true
             fi
             if ! grep -q "JOB DONE" "$out"; then
