@@ -7,6 +7,7 @@
   "degauss": 0.01,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -20,6 +21,7 @@
   "degauss": 0.01,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -33,6 +35,7 @@
   "degauss": 0.01,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -46,6 +49,7 @@
   "degauss": 0.01,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -59,6 +63,7 @@
   "degauss": 0.02,
   "dft": "PBEsol",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -72,6 +77,35 @@
   "degauss": 0.02,
   "dft": "PBEsol",
   "mode": 3,
+  "h": 0.01,
+  "files": [
+   "m.in",
+   "p.in"
+  ]
+ },
+ {
+  "job": "A_hfrh_k24_h001_d010_pbe_j0",
+  "layer": "A",
+  "material": "HfRh",
+  "k": 24,
+  "degauss": 0.01,
+  "dft": "PBE",
+  "mode": 0,
+  "h": 0.001,
+  "files": [
+   "m.in",
+   "p.in"
+  ]
+ },
+ {
+  "job": "A_hfrh_k24_h001_d010_pbe_j3",
+  "layer": "A",
+  "material": "HfRh",
+  "k": 24,
+  "degauss": 0.01,
+  "dft": "PBE",
+  "mode": 3,
+  "h": 0.001,
   "files": [
    "m.in",
    "p.in"
@@ -85,6 +119,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -98,6 +133,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -111,6 +147,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -124,6 +161,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -137,6 +175,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -150,6 +189,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -163,6 +203,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -176,6 +217,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -189,6 +231,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -202,6 +245,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -215,6 +259,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -228,6 +273,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -241,6 +287,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -254,6 +301,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -267,6 +315,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -280,6 +329,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -293,6 +343,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -306,6 +357,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -319,6 +371,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -332,6 +385,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -345,6 +399,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -358,6 +413,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -371,6 +427,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -384,6 +441,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -397,6 +455,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -410,6 +469,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -423,6 +483,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -436,6 +497,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -449,6 +511,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -462,6 +525,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -475,6 +539,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -488,6 +553,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -501,6 +567,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -514,6 +581,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -527,6 +595,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -540,6 +609,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -553,6 +623,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -566,6 +637,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -579,6 +651,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -592,6 +665,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -605,6 +679,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -618,6 +693,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -631,6 +707,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -644,6 +721,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -657,6 +735,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -670,6 +749,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -683,6 +763,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -696,6 +777,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -709,6 +791,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -722,6 +805,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -735,6 +819,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -748,6 +833,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -761,6 +847,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -774,6 +861,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -787,6 +875,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -800,6 +889,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -813,6 +903,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -826,6 +917,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -839,6 +931,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -852,6 +945,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -865,6 +959,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -878,6 +973,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -891,6 +987,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -904,6 +1001,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -917,6 +1015,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -930,6 +1029,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -943,6 +1043,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -956,6 +1057,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -969,6 +1071,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -982,6 +1085,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -995,6 +1099,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1008,6 +1113,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1021,6 +1127,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1034,6 +1141,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1047,6 +1155,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1060,6 +1169,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1073,6 +1183,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1086,6 +1197,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1099,6 +1211,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1112,6 +1225,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1125,6 +1239,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1138,6 +1253,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1151,6 +1267,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1164,6 +1281,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1177,6 +1295,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1190,6 +1309,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1203,6 +1323,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1216,6 +1337,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1229,6 +1351,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1242,6 +1365,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1255,6 +1379,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1268,6 +1393,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1281,6 +1407,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1294,6 +1421,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1307,6 +1435,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1320,6 +1449,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1333,6 +1463,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1346,6 +1477,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1359,6 +1491,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 0,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1372,6 +1505,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 1,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1385,6 +1519,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 2,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1398,6 +1533,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 3,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1411,6 +1547,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 4,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
@@ -1424,6 +1561,7 @@
   "degauss": 0.02,
   "dft": "PBE",
   "mode": 5,
+  "h": 0.01,
   "files": [
    "m.in",
    "p.in"
