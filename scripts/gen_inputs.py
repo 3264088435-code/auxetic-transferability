@@ -64,6 +64,9 @@ A_SETTINGS = [
     dict(k=20, degauss=0.010, dft="PBE"),
     dict(k=24, degauss=0.010, dft="PBE"),
     dict(k=24, degauss=0.020, dft="PBEsol"),
+    # 存档那批用的是 h=1e-3；C' 只剩十几 GPa 时 1% 步长的三阶项不能白送，
+    # 这一组专门用来核对步长影响（其余设置与上一行完全相同）
+    dict(k=24, degauss=0.010, dft="PBE", h=0.001),
 ]
 
 
@@ -122,17 +125,17 @@ def write_input(path, *, prefix, dft, k, degauss, cell, sites, species):
         f.write("\n".join(lines))
 
 
-def emit(jobs, job_id, layer, meta, cell, sites, species, modes, out_root):
+def emit(jobs, job_id, layer, meta, cell, sites, species, modes, out_root, h=H):
     d = os.path.join(out_root, "runs", job_id)
     os.makedirs(d, exist_ok=True)
     for j in modes:
         for s, tag in ((-1, "m"), (1, "p")):
             write_input(os.path.join(d, f"{tag}.in"),
                         prefix=job_id, dft=meta["dft"], k=meta["k"],
-                        degauss=meta["degauss"], cell=deformed(cell, strain(j, s)),
+                        degauss=meta["degauss"], cell=deformed(cell, strain(j, s, h)),
                         sites=sites, species=species)
         jobs.append(dict(job=job_id, layer=layer, material=meta["name"], k=meta["k"],
-                         degauss=meta["degauss"], dft=meta["dft"], mode=j,
+                         degauss=meta["degauss"], dft=meta["dft"], mode=j, h=h,
                          files=["m.in", "p.in"]))
     plist = [UPF[s] for s in species]
     with open(os.path.join(d, "pseudo.list"), "w", encoding="utf-8", newline="\n") as f:
@@ -153,11 +156,13 @@ def main():
     a_species = ["Hf", "Rh"]
     for st in A_SETTINGS:
         tag = "pbe" if st["dft"] == "PBE" else st["dft"].lower()
+        h = st.get("h", H)
+        htag = "" if abs(h - H) < 1e-12 else f"_h{int(round(h * 1000)):03d}"
         for j in HFRH["modes"]:
-            jid = f"A_hfrh_k{st['k']}_d{int(round(st['degauss'] * 1000)):03d}_{tag}_j{j}"
+            jid = f"A_hfrh_k{st['k']}{htag}_d{int(round(st['degauss'] * 1000)):03d}_{tag}_j{j}"
             meta = dict(name=HFRH["name"], k=st["k"], degauss=st["degauss"], dft=st["dft"])
             emit(jobs, jid, "A", meta, HFRH["cell"], HFRH["sites"], a_species,
-                 [j], ROOT)
+                 [j], ROOT, h=h)
 
     # ---- B and C layers ----
     for layer, grids in (("B", (6, 12, 16)), ("C", (24,))):
