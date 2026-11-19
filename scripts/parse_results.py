@@ -26,13 +26,15 @@ def stress_block(path):
     tail = text[idx:].splitlines()
     rows = []
     for line in tail[1:]:
+        # QE prints each row twice: first three numbers are Ry/bohr^3, the last
+        # three are the same row in kbar.  We want the kbar ones.
         m = re.match(r"\s*([-+]?\d+\.\d+)\s+([-+]?\d+\.\d+)\s+([-+]?\d+\.\d+)\s+"
                      r"([-+]?\d+\.\d+)\s+([-+]?\d+\.\d+)\s+([-+]?\d+\.\d+)", line)
         if not m:
             if rows:
                 break
             continue
-        rows.append([float(v) for v in m.groups()])
+        rows.append([float(v) for v in m.groups()[3:]])
         if len(rows) == 3:
             break
     if len(rows) != 3:
@@ -58,7 +60,7 @@ def main():
         if sm is None or sp is None:
             print(f"!! {jid}: missing stress block")
             continue
-        col = [(p - m) / (2 * 0.01) for m, p in zip(sm, sp)]
+        col = [(p - m) / (2 * float(meta[jid].get("h", 0.01))) for m, p in zip(sm, sp)]
         rec = dict(meta[jid])
         rec.update({"sigma_m": " ".join(f"{v:.3f}" for v in sm),
                     "sigma_p": " ".join(f"{v:.3f}" for v in sp),
@@ -66,7 +68,7 @@ def main():
         rows.append(rec)
 
     out = os.path.join(ROOT, "results", "qe_summary.csv")
-    keys = ["job", "layer", "material", "k", "degauss", "dft", "mode",
+    keys = ["job", "layer", "material", "k", "degauss", "dft", "mode", "h",
             "sigma_m", "sigma_p", "C_col"]
     with open(out, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=keys)
