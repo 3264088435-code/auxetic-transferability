@@ -62,8 +62,10 @@ jobs:
           mkdir -p pseudo tmp
           while read -r p; do
             [ -n "$p" ] || continue
-            [ -f "pseudo/$p" ] || curl -fsSL -o "pseudo/$p" \
-              "https://pseudopotentials.quantum-espresso.org/upf_files/$p"
+            # 官网偶尔 DNS 抖动，重试几次；-s 顺带挡掉下载成空文件的半成品
+            [ -s "pseudo/$p" ] || curl -fsSL --retry 6 --retry-delay 4 --retry-all-errors \
+              -o "pseudo/$p" "https://pseudopotentials.quantum-espresso.org/upf_files/$p"
+            [ -s "pseudo/$p" ] || { echo "!! 赝势下载失败: $p"; exit 1; }
           done < pseudo.list
           ls -l pseudo
 
