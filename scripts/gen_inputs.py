@@ -135,7 +135,7 @@ def write_input(path, *, prefix, dft, k, degauss, cell, sites, species, calc="sc
         f.write("\n".join(lines))
 
 
-def emit(jobs, job_id, layer, meta, cell, sites, species, modes, out_root, h=H):
+def emit(jobs, job_id, layer, meta, cell, sites, species, modes, out_root, h=H, cell_tag="prim"):
     d = os.path.join(out_root, "runs", job_id)
     os.makedirs(d, exist_ok=True)
     for j in modes:
@@ -145,7 +145,7 @@ def emit(jobs, job_id, layer, meta, cell, sites, species, modes, out_root, h=H):
                         degauss=meta["degauss"], cell=deformed(cell, strain(j, s, h)),
                         sites=sites, species=species)
         jobs.append(dict(job=job_id, layer=layer, material=meta["name"], k=meta["k"],
-                         degauss=meta["degauss"], dft=meta["dft"], mode=j, h=h,
+                         degauss=meta["degauss"], dft=meta["dft"], mode=j, h=h, cell=cell_tag,
                          files=["m.in", "p.in"]))
     plist = [UPF[s] for s in species]
     with open(os.path.join(d, "pseudo.list"), "w", encoding="utf-8", newline="\n") as f:
@@ -190,7 +190,8 @@ def main():
         meta = dict(name="HfRh", k=24, degauss=0.020, dft="PBE")
         for j in HFRH["modes"]:
             jid = f"A_hfrh_k24_rlx_d020_pbe_j{j}"
-            emit(jobs, jid, "A", meta, cell, HFRH["sites"], a_species, [j], ROOT, h=0.001)
+            emit(jobs, jid, "A", meta, cell, HFRH["sites"], a_species, [j], ROOT, h=0.001,
+                 cell_tag="relaxed")
 
     # ---- B and C layers ----
     for layer, grids in (("B", (6, 12, 16)), ("C", (24,))):
