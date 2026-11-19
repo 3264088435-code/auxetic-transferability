@@ -130,6 +130,11 @@ def main():
     for (mat, k, dft), cols in sorted(groups.items()):
         if mat in ("HfRh", "InP") and set(cols) == {0, 3}:
             C = cubic_from_columns(cols)
+        elif len(cols) < 6:
+            # 立方只算 j=0/j=3，其余晶系要 6 列；列不齐就不要硬拼，投影会把
+            # 缺列平均成假分量（C11 会塌成几十 GPa 那种胡数）
+            print(f"skip {mat} k={k} {dft}: only {len(cols)} column(s) {sorted(cols)}")
+            continue
         else:
             C = np.zeros((6, 6))
             for j, v in cols.items():
