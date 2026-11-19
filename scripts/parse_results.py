@@ -19,6 +19,8 @@ KBAR_TO_GPA = 0.1
 
 def stress_block(path):
     """Return the last stress tensor (kbar) reported in a QE .out file."""
+    if not os.path.exists(path):
+        return None
     text = open(path, encoding="utf-8", errors="replace").read()
     idx = text.rfind("total   stress")
     if idx < 0:
@@ -56,8 +58,7 @@ def main():
         if jid not in meta:
             continue
         sm = stress_block(os.path.join(d, "m.out"))
-        sp = stress_block(os.path.join(d, "p.out"))
-        if sm is None or sp is None:
+        sp = stress_block(os.path.join(d, "p.out"))        if sm is None or sp is None:
             print(f"!! {jid}: missing stress block")
             continue
         col = [(p - m) / (2 * float(meta[jid].get("h", 0.01))) for m, p in zip(sm, sp)]
