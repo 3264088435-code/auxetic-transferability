@@ -1,0 +1,7 @@
+pseudo/
+tmp/
+__pycache__/
+*.out
+*.wfc*
+*.mix*
+.env

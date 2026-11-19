@@ -1,0 +1,99 @@
+name: QE SCF
+
+on:
+  workflow_dispatch:
+    inputs:
+      plan:
+        description: "which layer to run: A, B, C, or ALL"
+        required: true
+        default: "A"
+      only:
+        description: "optional substring filter on job id, e.g. _k20_"
+        required: false
+        default: ""
+      max_parallel:
+        description: "matrix max-parallel (free accounts cap at 20)"
+        required: false
+        default: "20"
+
+permissions:
+  contents: read
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.m.outputs.matrix }}
+      count: ${{ steps.m.outputs.count }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: m
+        shell: bash
+        run: |
+          python3 scripts/make_matrix.py --plan "${{ inputs.plan }}" --only "${{ inputs.only }}" >> "$GITHUB_OUTPUT"
+
+  scf:
+    needs: plan
+    if: needs.plan.outputs.count != '0'
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    strategy:
+      fail-fast: false
+      max-parallel: ${{ fromJSON(inputs.max_parallel) }}
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Quantum ESPRESSO
+        shell: bash
+        run: |
+          set -euo pipefail
+          curl -Ls https://micro.mamba.pm/api/micromamba/linux-64/latest | tar -xj -C "$RUNNER_TEMP" bin/micromamba
+          export MAMBA_ROOT_PREFIX="$RUNNER_TEMP/mamba"
+          "$RUNNER_TEMP/bin/micromamba" create -y -q -p "$RUNNER_TEMP/qe" -c conda-forge qe
+          export PATH="$RUNNER_TEMP/qe/bin:$PATH"
+          echo "QE=$(pw.x -h 2>&1 | head -2 | tail -1)"
+
+      - name: Fetch pseudopotentials
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd "runs/${{ matrix.job }}"
+          mkdir -p pseudo tmp
+          while read -r p; do
+            [ -n "$p" ] || continue
+            [ -f "pseudo/$p" ] || curl -fsSL -o "pseudo/$p" \
+              "https://pseudopotentials.quantum-espresso.org/upf_files/$p"
+          done < pseudo.list
+          ls -l pseudo
+
+      - name: Run SCF
+        shell: bash
+        run: |
+          set -euo pipefail
+          export PATH="$RUNNER_TEMP/qe/bin:$PATH"
+          export OMP_NUM_THREADS=1
+          cd "runs/${{ matrix.job }}"
+          for f in *.in; do
+            out="${f%.in}.out"
+            echo "##### $f  $(date -u +%H:%M:%S)"
+            if command -v mpirun >/dev/null 2>&1; then
+              mpirun -np 4 pw.x -in "$f" > "$out" 2>&1 || true
+            else
+              pw.x -in "$f" > "$out" 2>&1 || true
+            fi
+            if ! grep -q "JOB DONE" "$out"; then
+              echo "!! $f did not finish"; tail -60 "$out"; exit 1
+            fi
+            echo "   $(grep -c . "$out") lines, $(date -u +%H:%M:%S)"
+          done
+          grep -A5 "total stress" *.out | tail -20
+
+      - name: Upload outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.job }}
+          path: runs/${{ matrix.job }}/*.out
+          if-no-files-found: warn
+          retention-days: 30

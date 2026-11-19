@@ -1,0 +1,41 @@
+&CONTROL
+ calculation='scf'
+ prefix='B_sns_k6_d020_pbe_j2'
+ outdir='./tmp'
+ pseudo_dir='./pseudo'
+ tstress=.true.
+ tprnfor=.true.
+ disk_io='none'
+ verbosity='low'
+/
+&SYSTEM
+ ibrav=0
+ nat=8
+ ntyp=2
+ ecutwfc=60.0
+ ecutrho=480.0
+ input_dft='PBE'
+ occupations='smearing', smearing='mv', degauss=0.020
+/
+&ELECTRONS
+ conv_thr=1.0d-8
+ mixing_beta=0.4
+/
+ATOMIC_SPECIES
+ S   32.065 S.pbe-n-kjpaw_psl.1.0.0.UPF
+ Sn  118.710 Sn.pbe-dn-kjpaw_psl.1.0.0.UPF
+CELL_PARAMETERS angstrom
+ 4.090439720 0.000000000 0.000000000
+ 0.000000000 11.796240910 0.000000000
+ 0.000000000 0.000000000 4.131226493
+ATOMIC_POSITIONS crystal
+ Sn  0.000000000 0.128217840 0.750000000
+ Sn  0.000000000 0.871782160 0.250000000
+ Sn  0.500000000 0.628217840 0.750000000
+ Sn  0.500000000 0.371782160 0.250000000
+ S   0.000000000 0.346125500 0.750000000
+ S   0.000000000 0.653874500 0.250000000
+ S   0.500000000 0.846125500 0.750000000
+ S   0.500000000 0.153874500 0.250000000
+K_POINTS automatic
+ 6 6 6 0 0 0

@@ -1,0 +1,39 @@
+&CONTROL
+ calculation='scf'
+ prefix='B_zr2cu_k16_d020_pbe_j3'
+ outdir='./tmp'
+ pseudo_dir='./pseudo'
+ tstress=.true.
+ tprnfor=.true.
+ disk_io='none'
+ verbosity='low'
+/
+&SYSTEM
+ ibrav=0
+ nat=6
+ ntyp=2
+ ecutwfc=60.0
+ ecutrho=480.0
+ input_dft='PBE'
+ occupations='smearing', smearing='mv', degauss=0.020
+/
+&ELECTRONS
+ conv_thr=1.0d-8
+ mixing_beta=0.4
+/
+ATOMIC_SPECIES
+ Cu  63.546 Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+ Zr  91.224 Zr.pbe-spn-kjpaw_psl.1.0.0.UPF
+CELL_PARAMETERS angstrom
+ 3.221672140 0.000000000 0.000000000
+ 0.000000000 3.221672140 0.016108361
+ 0.000000000 0.055890779 11.178155710
+ATOMIC_POSITIONS crystal
+ Zr  0.000000000 0.000000000 0.346274950
+ Zr  0.000000000 0.000000000 0.653725050
+ Zr  0.500000000 0.500000000 0.846274950
+ Zr  0.500000000 0.500000000 0.153725050
+ Cu  0.000000000 0.000000000 0.000000000
+ Cu  0.500000000 0.500000000 0.500000000
+K_POINTS automatic
+ 16 16 16 0 0 0

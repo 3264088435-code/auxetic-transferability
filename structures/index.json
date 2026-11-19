@@ -1,0 +1,97 @@
+[
+  {
+    "name": "InP",
+    "mp_id_table": "mp-20351",
+    "mp_id_current": "mp-aaaabect",
+    "spacegroup": "F-43m",
+    "number": 216,
+    "nsites": 8,
+    "abc": [
+      5.904,
+      5.904,
+      5.904
+    ],
+    "angles": [
+      90.0,
+      90.0,
+      90.0
+    ],
+    "cif": "structures/mp-20351.cif"
+  },
+  {
+    "name": "BN",
+    "mp_id_table": "mp-984",
+    "mp_id_current": "mp-aaaaablw",
+    "spacegroup": "P6_3/mmc",
+    "number": 194,
+    "nsites": 4,
+    "abc": [
+      2.5124,
+      2.5124,
+      7.7073
+    ],
+    "angles": [
+      90.0,
+      90.0,
+      120.0
+    ],
+    "cif": "structures/mp-984.cif"
+  },
+  {
+    "name": "SnS",
+    "mp_id_table": "mp-559676",
+    "mp_id_current": "mp-aaabfvya",
+    "spacegroup": "Cmcm",
+    "number": 63,
+    "nsites": 8,
+    "abc": [
+      4.0904,
+      11.7962,
+      4.0903
+    ],
+    "angles": [
+      90.0,
+      90.0,
+      90.0
+    ],
+    "cif": "structures/mp-559676.cif"
+  },
+  {
+    "name": "HfAl",
+    "mp_id_table": "mp-249",
+    "mp_id_current": "mp-aaaaaajp",
+    "spacegroup": "Cmcm",
+    "number": 63,
+    "nsites": 8,
+    "abc": [
+      3.2629,
+      10.7986,
+      4.2483
+    ],
+    "angles": [
+      90.0,
+      90.0,
+      90.0
+    ],
+    "cif": "structures/mp-249.cif"
+  },
+  {
+    "name": "Zr2Cu",
+    "mp_id_table": "mp-193",
+    "mp_id_current": "mp-aaaaaahl",
+    "spacegroup": "I4/mmm",
+    "number": 139,
+    "nsites": 6,
+    "abc": [
+      3.2217,
+      3.2217,
+      11.1782
+    ],
+    "angles": [
+      90.0,
+      90.0,
+      90.0
+    ],
+    "cif": "structures/mp-193.cif"
+  }
+]
