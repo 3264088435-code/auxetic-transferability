@@ -15,6 +15,10 @@ on:
         description: "matrix max-parallel (free accounts cap at 20)"
         required: false
         default: "20"
+      side:
+        description: "both, or m / p to run one strain side only (for jobs near the 6 h cap)"
+        required: false
+        default: "both"
 
 permissions:
   contents: read
@@ -78,7 +82,13 @@ jobs:
           echo "cores=$(nproc) mem=$(free -g | awk '/Mem:/{print $2}')G disk=$(df -h . | awk 'NR==2{print $4}')"
           NP=$(nproc)
           cd "runs/${{ matrix.job }}"
+          SIDE="${{ inputs.side }}"
           for f in *.in; do
+            case "$SIDE" in
+              both) ;;
+              m) [ "$f" = "m.in" ] || continue ;;
+              p) [ "$f" = "p.in" ] || continue ;;
+            esac
             out="${f%.in}.out"
             echo "##### $f  $(date -u +%H:%M:%S)  np=$NP"
             if command -v mpirun >/dev/null 2>&1; then
@@ -99,7 +109,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ${{ matrix.job }}
+          name: ${{ inputs.side == 'both' && matrix.job || format('{0}_{1}', matrix.job, inputs.side) }}
           path: runs/${{ matrix.job }}/*.out
           if-no-files-found: warn
           retention-days: 30
