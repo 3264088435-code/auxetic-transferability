@@ -117,8 +117,10 @@ def write_input(path, *, prefix, dft, k, degauss, cell, sites, species, calc="sc
              f" mixing_beta={MIXING_BETA}",
              "/"]
     if calc != "scf":
-        lines += ["&IONS", " ion_dynamics='bfgs'", "/",
-                  "&CELL", " cell_dynamics='bfgs'", " press_conv_thr=0.1", "/"]
+        lines += ["&IONS", " ion_dynamics='bfgs'", "/"]
+        # relax 固定胞，不写 &CELL（QE 在 relax 下会忽略它并告警）
+        if calc == "vc-relax":
+            lines += ["&CELL", " cell_dynamics='bfgs'", " press_conv_thr=0.1", "/"]
     lines += ["ATOMIC_SPECIES"]
     for sym in species:
         lines.append(f" {sym:<3} {Element(sym).atomic_mass:.3f} {UPF[sym]}")
