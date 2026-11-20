@@ -1721,5 +1721,33 @@
    "m.in",
    "p.in"
   ]
+ },
+ {
+  "job": "D_inp_k12_relax_j3_m",
+  "layer": "D",
+  "material": "InP",
+  "k": 12,
+  "degauss": 0.02,
+  "dft": "PBE",
+  "mode": 3,
+  "h": 0.01,
+  "cell": "prim",
+  "files": [
+   "m.in"
+  ]
+ },
+ {
+  "job": "D_inp_k12_relax_j3_p",
+  "layer": "D",
+  "material": "InP",
+  "k": 12,
+  "degauss": 0.02,
+  "dft": "PBE",
+  "mode": 3,
+  "h": 0.01,
+  "cell": "prim",
+  "files": [
+   "p.in"
+  ]
  }
 ]
