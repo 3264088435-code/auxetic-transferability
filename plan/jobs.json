@@ -1890,5 +1890,107 @@
       "p.in"
     ],
     "note": "rebuild on unified cell; previous j3-j5 had a3 scaled 1.0100"
+  },
+  {
+    "job": "F_sns_k12x12x8_fix_pbe_j0",
+    "layer": "F",
+    "material": "SnS",
+    "k": "12x12x8",
+    "degauss": null,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "ortho_L0",
+    "files": [
+      "m.in",
+      "p.in"
+    ],
+    "occ": "fixed",
+    "note": "fixed occupations to remove SCF bistability seen in layer E"
+  },
+  {
+    "job": "F_sns_k12x12x8_fix_pbe_j1",
+    "layer": "F",
+    "material": "SnS",
+    "k": "12x12x8",
+    "degauss": null,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "ortho_L0",
+    "files": [
+      "m.in",
+      "p.in"
+    ],
+    "occ": "fixed",
+    "note": "fixed occupations to remove SCF bistability seen in layer E"
+  },
+  {
+    "job": "F_sns_k12x12x8_fix_pbe_j2",
+    "layer": "F",
+    "material": "SnS",
+    "k": "12x12x8",
+    "degauss": null,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "ortho_L0",
+    "files": [
+      "m.in",
+      "p.in"
+    ],
+    "occ": "fixed",
+    "note": "fixed occupations to remove SCF bistability seen in layer E"
+  },
+  {
+    "job": "F_sns_k12x12x8_fix_pbe_j3",
+    "layer": "F",
+    "material": "SnS",
+    "k": "12x12x8",
+    "degauss": null,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "ortho_L0",
+    "files": [
+      "m.in",
+      "p.in"
+    ],
+    "occ": "fixed",
+    "note": "fixed occupations to remove SCF bistability seen in layer E"
+  },
+  {
+    "job": "F_sns_k12x12x8_fix_pbe_j4",
+    "layer": "F",
+    "material": "SnS",
+    "k": "12x12x8",
+    "degauss": null,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "ortho_L0",
+    "files": [
+      "m.in",
+      "p.in"
+    ],
+    "occ": "fixed",
+    "note": "fixed occupations to remove SCF bistability seen in layer E"
+  },
+  {
+    "job": "F_sns_k12x12x8_fix_pbe_j5",
+    "layer": "F",
+    "material": "SnS",
+    "k": "12x12x8",
+    "degauss": null,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "ortho_L0",
+    "files": [
+      "m.in",
+      "p.in"
+    ],
+    "occ": "fixed",
+    "note": "fixed occupations to remove SCF bistability seen in layer E"
   }
 ]
