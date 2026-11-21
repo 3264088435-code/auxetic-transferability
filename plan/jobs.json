@@ -2008,5 +2008,21 @@
   ],
   "occ": "fixed",
   "note": "zero-strain validation point on MP equilibrium cell; stop if any |sigma|>0.1 GPa"
+ },
+ {
+  "job": "G_sns_pnma_vcrel",
+  "layer": "G",
+  "material": "SnS",
+  "k": "6x6x6",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": -1,
+  "h": 0.0,
+  "cell": "Pnma_mp-aaaaadhv",
+  "files": [
+   "r.in"
+  ],
+  "occ": "fixed",
+  "note": "vc-relax at k6 to get our own equilibrium cell before the k ladder"
  }
 ]
