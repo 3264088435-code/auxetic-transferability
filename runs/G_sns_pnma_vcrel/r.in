@@ -1,0 +1,50 @@
+&CONTROL
+  calculation = 'vc-relax'
+  prefix =   'sns'
+  outdir =   './tmp'
+  pseudo_dir =   './pseudo'
+  tprnfor = .true.
+  tstress = .true.
+  disk_io =   'none'
+  forc_conv_thr = 1.0d-4
+/
+&SYSTEM
+  ibrav = 0
+  nat = 8
+  ntyp = 2
+  ecutwfc = 60
+  ecutrho = 480
+  occupations =   'fixed'
+/
+&ELECTRONS
+  conv_thr = 1e-8
+  mixing_beta = 0.4
+/
+&IONS
+  ion_dynamics = 'bfgs'
+/
+&CELL
+  cell_dynamics = 'bfgs'
+  press_conv_thr = 0.2
+/
+ATOMIC_SPECIES
+Sn 118.71 Sn.pbe-dn-kjpaw_psl.1.0.0.UPF
+S  32.065 S.pbe-n-kjpaw_psl.1.0.0.UPF
+
+CELL_PARAMETERS angstrom
+       3.956855000      0.000000000      0.000000000
+       0.000000000      4.532811000      0.000000000
+       0.000000000      0.000000000     11.392019000
+
+ATOMIC_POSITIONS crystal
+  Sn    0.25000    0.36954    0.62163
+  Sn    0.75000    0.63046    0.37837
+  Sn    0.75000    0.86954    0.87837
+  Sn    0.25000    0.13046    0.12163
+  S     0.25000    0.01060    0.34750
+  S     0.75000    0.98940    0.65250
+  S     0.75000    0.51060    0.15250
+  S     0.25000    0.48940    0.84750
+
+K_POINTS automatic
+6 6 6 0 0 0
