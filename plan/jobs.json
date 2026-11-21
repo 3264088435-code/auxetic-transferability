@@ -1,1753 +1,1798 @@
 [
- {
-  "job": "A_hfrh_k20_d010_pbe_j0",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 20,
-  "degauss": 0.01,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "A_hfrh_k20_d010_pbe_j3",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 20,
-  "degauss": 0.01,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "A_hfrh_k24_d010_pbe_j0",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 24,
-  "degauss": 0.01,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "A_hfrh_k24_d010_pbe_j3",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 24,
-  "degauss": 0.01,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "A_hfrh_k24_d020_pbesol_j0",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBEsol",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "A_hfrh_k24_d020_pbesol_j3",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBEsol",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "A_hfrh_k24_h001_d010_pbe_j0",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 24,
-  "degauss": 0.01,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.001,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "A_hfrh_k24_h001_d010_pbe_j3",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 24,
-  "degauss": 0.01,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.001,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "A_hfrh_k24_relax",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": -1,
-  "h": 0.0,
-  "files": [
-   "r.in"
-  ]
- },
- {
-  "job": "A_hfrh_k24_rlx_d020_pbe_j0",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.001,
-  "cell": "relaxed",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "A_hfrh_k24_rlx_d020_pbe_j3",
-  "layer": "A",
-  "material": "HfRh",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.001,
-  "cell": "relaxed",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k12_d020_pbe_j0",
-  "layer": "B",
-  "material": "BN",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k12_d020_pbe_j1",
-  "layer": "B",
-  "material": "BN",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k12_d020_pbe_j2",
-  "layer": "B",
-  "material": "BN",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k12_d020_pbe_j3",
-  "layer": "B",
-  "material": "BN",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k12_d020_pbe_j4",
-  "layer": "B",
-  "material": "BN",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k12_d020_pbe_j5",
-  "layer": "B",
-  "material": "BN",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k16_d020_pbe_j0",
-  "layer": "B",
-  "material": "BN",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k16_d020_pbe_j1",
-  "layer": "B",
-  "material": "BN",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k16_d020_pbe_j2",
-  "layer": "B",
-  "material": "BN",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k16_d020_pbe_j3",
-  "layer": "B",
-  "material": "BN",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k16_d020_pbe_j4",
-  "layer": "B",
-  "material": "BN",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k16_d020_pbe_j5",
-  "layer": "B",
-  "material": "BN",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k6_d020_pbe_j0",
-  "layer": "B",
-  "material": "BN",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k6_d020_pbe_j1",
-  "layer": "B",
-  "material": "BN",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k6_d020_pbe_j2",
-  "layer": "B",
-  "material": "BN",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k6_d020_pbe_j3",
-  "layer": "B",
-  "material": "BN",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k6_d020_pbe_j4",
-  "layer": "B",
-  "material": "BN",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_bn_k6_d020_pbe_j5",
-  "layer": "B",
-  "material": "BN",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k12_d020_pbe_j0",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k12_d020_pbe_j1",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k12_d020_pbe_j2",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k12_d020_pbe_j3",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k12_d020_pbe_j4",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k12_d020_pbe_j5",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k16_d020_pbe_j0",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k16_d020_pbe_j1",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k16_d020_pbe_j2",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k16_d020_pbe_j3",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k16_d020_pbe_j4",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k16_d020_pbe_j5",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k6_d020_pbe_j0",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k6_d020_pbe_j1",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k6_d020_pbe_j2",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k6_d020_pbe_j3",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k6_d020_pbe_j4",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_hfal_k6_d020_pbe_j5",
-  "layer": "B",
-  "material": "HfAl",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_inp_k12_d020_pbe_j0",
-  "layer": "B",
-  "material": "InP",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_inp_k12_d020_pbe_j3",
-  "layer": "B",
-  "material": "InP",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_inp_k16_d020_pbe_j0",
-  "layer": "B",
-  "material": "InP",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_inp_k16_d020_pbe_j3",
-  "layer": "B",
-  "material": "InP",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_inp_k6_d020_pbe_j0",
-  "layer": "B",
-  "material": "InP",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_inp_k6_d020_pbe_j3",
-  "layer": "B",
-  "material": "InP",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k12_d020_pbe_j0",
-  "layer": "B",
-  "material": "SnS",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k12_d020_pbe_j1",
-  "layer": "B",
-  "material": "SnS",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k12_d020_pbe_j2",
-  "layer": "B",
-  "material": "SnS",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k12_d020_pbe_j3",
-  "layer": "B",
-  "material": "SnS",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k12_d020_pbe_j4",
-  "layer": "B",
-  "material": "SnS",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k12_d020_pbe_j5",
-  "layer": "B",
-  "material": "SnS",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k16_d020_pbe_j0",
-  "layer": "B",
-  "material": "SnS",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k16_d020_pbe_j1",
-  "layer": "B",
-  "material": "SnS",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k16_d020_pbe_j2",
-  "layer": "B",
-  "material": "SnS",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k16_d020_pbe_j3",
-  "layer": "B",
-  "material": "SnS",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k16_d020_pbe_j4",
-  "layer": "B",
-  "material": "SnS",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k16_d020_pbe_j5",
-  "layer": "B",
-  "material": "SnS",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k6_d020_pbe_j0",
-  "layer": "B",
-  "material": "SnS",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k6_d020_pbe_j1",
-  "layer": "B",
-  "material": "SnS",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k6_d020_pbe_j2",
-  "layer": "B",
-  "material": "SnS",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k6_d020_pbe_j3",
-  "layer": "B",
-  "material": "SnS",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k6_d020_pbe_j4",
-  "layer": "B",
-  "material": "SnS",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_sns_k6_d020_pbe_j5",
-  "layer": "B",
-  "material": "SnS",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k12_d020_pbe_j0",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k12_d020_pbe_j1",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k12_d020_pbe_j2",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k12_d020_pbe_j3",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k12_d020_pbe_j4",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k12_d020_pbe_j5",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k16_d020_pbe_j0",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k16_d020_pbe_j1",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k16_d020_pbe_j2",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k16_d020_pbe_j3",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k16_d020_pbe_j4",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k16_d020_pbe_j5",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 16,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k6_d020_pbe_j0",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k6_d020_pbe_j1",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k6_d020_pbe_j2",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k6_d020_pbe_j3",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k6_d020_pbe_j4",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "B_zr2cu_k6_d020_pbe_j5",
-  "layer": "B",
-  "material": "Zr2Cu",
-  "k": 6,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_bn_k24_d020_pbe_j0",
-  "layer": "C",
-  "material": "BN",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_bn_k24_d020_pbe_j1",
-  "layer": "C",
-  "material": "BN",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_bn_k24_d020_pbe_j2",
-  "layer": "C",
-  "material": "BN",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_bn_k24_d020_pbe_j3",
-  "layer": "C",
-  "material": "BN",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_bn_k24_d020_pbe_j4",
-  "layer": "C",
-  "material": "BN",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_bn_k24_d020_pbe_j5",
-  "layer": "C",
-  "material": "BN",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_hfal_k24_d020_pbe_j0",
-  "layer": "C",
-  "material": "HfAl",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_hfal_k24_d020_pbe_j1",
-  "layer": "C",
-  "material": "HfAl",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_hfal_k24_d020_pbe_j2",
-  "layer": "C",
-  "material": "HfAl",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_hfal_k24_d020_pbe_j3",
-  "layer": "C",
-  "material": "HfAl",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_hfal_k24_d020_pbe_j4",
-  "layer": "C",
-  "material": "HfAl",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_hfal_k24_d020_pbe_j5",
-  "layer": "C",
-  "material": "HfAl",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_inp_k24_d020_pbe_j0",
-  "layer": "C",
-  "material": "InP",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_inp_k24_d020_pbe_j3",
-  "layer": "C",
-  "material": "InP",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_sns_k24_d020_pbe_j0",
-  "layer": "C",
-  "material": "SnS",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_sns_k24_d020_pbe_j1",
-  "layer": "C",
-  "material": "SnS",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_sns_k24_d020_pbe_j2",
-  "layer": "C",
-  "material": "SnS",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_sns_k24_d020_pbe_j3",
-  "layer": "C",
-  "material": "SnS",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_sns_k24_d020_pbe_j4",
-  "layer": "C",
-  "material": "SnS",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_sns_k24_d020_pbe_j5",
-  "layer": "C",
-  "material": "SnS",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_zr2cu_k24_d020_pbe_j0",
-  "layer": "C",
-  "material": "Zr2Cu",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 0,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_zr2cu_k24_d020_pbe_j1",
-  "layer": "C",
-  "material": "Zr2Cu",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 1,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_zr2cu_k24_d020_pbe_j2",
-  "layer": "C",
-  "material": "Zr2Cu",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 2,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_zr2cu_k24_d020_pbe_j3",
-  "layer": "C",
-  "material": "Zr2Cu",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_zr2cu_k24_d020_pbe_j4",
-  "layer": "C",
-  "material": "Zr2Cu",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 4,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "C_zr2cu_k24_d020_pbe_j5",
-  "layer": "C",
-  "material": "Zr2Cu",
-  "k": 24,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 5,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in",
-   "p.in"
-  ]
- },
- {
-  "job": "D_inp_k12_relax_j3_m",
-  "layer": "D",
-  "material": "InP",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "m.in"
-  ]
- },
- {
-  "job": "D_inp_k12_relax_j3_p",
-  "layer": "D",
-  "material": "InP",
-  "k": 12,
-  "degauss": 0.02,
-  "dft": "PBE",
-  "mode": 3,
-  "h": 0.01,
-  "cell": "prim",
-  "files": [
-   "p.in"
-  ]
- }
+  {
+    "job": "A_hfrh_k20_d010_pbe_j0",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 20,
+    "degauss": 0.01,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "A_hfrh_k20_d010_pbe_j3",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 20,
+    "degauss": 0.01,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "A_hfrh_k24_d010_pbe_j0",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 24,
+    "degauss": 0.01,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "A_hfrh_k24_d010_pbe_j3",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 24,
+    "degauss": 0.01,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "A_hfrh_k24_d020_pbesol_j0",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBEsol",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "A_hfrh_k24_d020_pbesol_j3",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBEsol",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "A_hfrh_k24_h001_d010_pbe_j0",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 24,
+    "degauss": 0.01,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.001,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "A_hfrh_k24_h001_d010_pbe_j3",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 24,
+    "degauss": 0.01,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.001,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "A_hfrh_k24_relax",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": -1,
+    "h": 0.0,
+    "files": [
+      "r.in"
+    ]
+  },
+  {
+    "job": "A_hfrh_k24_rlx_d020_pbe_j0",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.001,
+    "cell": "relaxed",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "A_hfrh_k24_rlx_d020_pbe_j3",
+    "layer": "A",
+    "material": "HfRh",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.001,
+    "cell": "relaxed",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k12_d020_pbe_j0",
+    "layer": "B",
+    "material": "BN",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k12_d020_pbe_j1",
+    "layer": "B",
+    "material": "BN",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k12_d020_pbe_j2",
+    "layer": "B",
+    "material": "BN",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k12_d020_pbe_j3",
+    "layer": "B",
+    "material": "BN",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k12_d020_pbe_j4",
+    "layer": "B",
+    "material": "BN",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k12_d020_pbe_j5",
+    "layer": "B",
+    "material": "BN",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k16_d020_pbe_j0",
+    "layer": "B",
+    "material": "BN",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k16_d020_pbe_j1",
+    "layer": "B",
+    "material": "BN",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k16_d020_pbe_j2",
+    "layer": "B",
+    "material": "BN",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k16_d020_pbe_j3",
+    "layer": "B",
+    "material": "BN",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k16_d020_pbe_j4",
+    "layer": "B",
+    "material": "BN",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k16_d020_pbe_j5",
+    "layer": "B",
+    "material": "BN",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k6_d020_pbe_j0",
+    "layer": "B",
+    "material": "BN",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k6_d020_pbe_j1",
+    "layer": "B",
+    "material": "BN",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k6_d020_pbe_j2",
+    "layer": "B",
+    "material": "BN",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k6_d020_pbe_j3",
+    "layer": "B",
+    "material": "BN",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k6_d020_pbe_j4",
+    "layer": "B",
+    "material": "BN",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_bn_k6_d020_pbe_j5",
+    "layer": "B",
+    "material": "BN",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k12_d020_pbe_j0",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k12_d020_pbe_j1",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k12_d020_pbe_j2",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k12_d020_pbe_j3",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k12_d020_pbe_j4",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k12_d020_pbe_j5",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k16_d020_pbe_j0",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k16_d020_pbe_j1",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k16_d020_pbe_j2",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k16_d020_pbe_j3",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k16_d020_pbe_j4",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k16_d020_pbe_j5",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k6_d020_pbe_j0",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k6_d020_pbe_j1",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k6_d020_pbe_j2",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k6_d020_pbe_j3",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k6_d020_pbe_j4",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_hfal_k6_d020_pbe_j5",
+    "layer": "B",
+    "material": "HfAl",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_inp_k12_d020_pbe_j0",
+    "layer": "B",
+    "material": "InP",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_inp_k12_d020_pbe_j3",
+    "layer": "B",
+    "material": "InP",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_inp_k16_d020_pbe_j0",
+    "layer": "B",
+    "material": "InP",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_inp_k16_d020_pbe_j3",
+    "layer": "B",
+    "material": "InP",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_inp_k6_d020_pbe_j0",
+    "layer": "B",
+    "material": "InP",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_inp_k6_d020_pbe_j3",
+    "layer": "B",
+    "material": "InP",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k12_d020_pbe_j0",
+    "layer": "B",
+    "material": "SnS",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k12_d020_pbe_j1",
+    "layer": "B",
+    "material": "SnS",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k12_d020_pbe_j2",
+    "layer": "B",
+    "material": "SnS",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k12_d020_pbe_j3",
+    "layer": "B",
+    "material": "SnS",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k12_d020_pbe_j4",
+    "layer": "B",
+    "material": "SnS",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k12_d020_pbe_j5",
+    "layer": "B",
+    "material": "SnS",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k16_d020_pbe_j0",
+    "layer": "B",
+    "material": "SnS",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k16_d020_pbe_j1",
+    "layer": "B",
+    "material": "SnS",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k16_d020_pbe_j2",
+    "layer": "B",
+    "material": "SnS",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k16_d020_pbe_j3",
+    "layer": "B",
+    "material": "SnS",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k16_d020_pbe_j4",
+    "layer": "B",
+    "material": "SnS",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k16_d020_pbe_j5",
+    "layer": "B",
+    "material": "SnS",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k6_d020_pbe_j0",
+    "layer": "B",
+    "material": "SnS",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k6_d020_pbe_j1",
+    "layer": "B",
+    "material": "SnS",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k6_d020_pbe_j2",
+    "layer": "B",
+    "material": "SnS",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k6_d020_pbe_j3",
+    "layer": "B",
+    "material": "SnS",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k6_d020_pbe_j4",
+    "layer": "B",
+    "material": "SnS",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_sns_k6_d020_pbe_j5",
+    "layer": "B",
+    "material": "SnS",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k12_d020_pbe_j0",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k12_d020_pbe_j1",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k12_d020_pbe_j2",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k12_d020_pbe_j3",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k12_d020_pbe_j4",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k12_d020_pbe_j5",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k16_d020_pbe_j0",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k16_d020_pbe_j1",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k16_d020_pbe_j2",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k16_d020_pbe_j3",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k16_d020_pbe_j4",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k16_d020_pbe_j5",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 16,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k6_d020_pbe_j0",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k6_d020_pbe_j1",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k6_d020_pbe_j2",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k6_d020_pbe_j3",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k6_d020_pbe_j4",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "B_zr2cu_k6_d020_pbe_j5",
+    "layer": "B",
+    "material": "Zr2Cu",
+    "k": 6,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_bn_k24_d020_pbe_j0",
+    "layer": "C",
+    "material": "BN",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_bn_k24_d020_pbe_j1",
+    "layer": "C",
+    "material": "BN",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_bn_k24_d020_pbe_j2",
+    "layer": "C",
+    "material": "BN",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_bn_k24_d020_pbe_j3",
+    "layer": "C",
+    "material": "BN",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_bn_k24_d020_pbe_j4",
+    "layer": "C",
+    "material": "BN",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_bn_k24_d020_pbe_j5",
+    "layer": "C",
+    "material": "BN",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_hfal_k24_d020_pbe_j0",
+    "layer": "C",
+    "material": "HfAl",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_hfal_k24_d020_pbe_j1",
+    "layer": "C",
+    "material": "HfAl",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_hfal_k24_d020_pbe_j2",
+    "layer": "C",
+    "material": "HfAl",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_hfal_k24_d020_pbe_j3",
+    "layer": "C",
+    "material": "HfAl",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_hfal_k24_d020_pbe_j4",
+    "layer": "C",
+    "material": "HfAl",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_hfal_k24_d020_pbe_j5",
+    "layer": "C",
+    "material": "HfAl",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_inp_k24_d020_pbe_j0",
+    "layer": "C",
+    "material": "InP",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_inp_k24_d020_pbe_j3",
+    "layer": "C",
+    "material": "InP",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_sns_k24_d020_pbe_j0",
+    "layer": "C",
+    "material": "SnS",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_sns_k24_d020_pbe_j1",
+    "layer": "C",
+    "material": "SnS",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_sns_k24_d020_pbe_j2",
+    "layer": "C",
+    "material": "SnS",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_sns_k24_d020_pbe_j3",
+    "layer": "C",
+    "material": "SnS",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_sns_k24_d020_pbe_j4",
+    "layer": "C",
+    "material": "SnS",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_sns_k24_d020_pbe_j5",
+    "layer": "C",
+    "material": "SnS",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_zr2cu_k24_d020_pbe_j0",
+    "layer": "C",
+    "material": "Zr2Cu",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_zr2cu_k24_d020_pbe_j1",
+    "layer": "C",
+    "material": "Zr2Cu",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_zr2cu_k24_d020_pbe_j2",
+    "layer": "C",
+    "material": "Zr2Cu",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_zr2cu_k24_d020_pbe_j3",
+    "layer": "C",
+    "material": "Zr2Cu",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_zr2cu_k24_d020_pbe_j4",
+    "layer": "C",
+    "material": "Zr2Cu",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 4,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "C_zr2cu_k24_d020_pbe_j5",
+    "layer": "C",
+    "material": "Zr2Cu",
+    "k": 24,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 5,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "D_inp_k12_relax_j3_m",
+    "layer": "D",
+    "material": "InP",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in"
+    ]
+  },
+  {
+    "job": "D_inp_k12_relax_j3_p",
+    "layer": "D",
+    "material": "InP",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 3,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "p.in"
+    ]
+  },
+  {
+    "job": "D_inp_k12_relax_j0",
+    "layer": "D",
+    "material": "InP",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 0,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "D_inp_k12_relax_j1",
+    "layer": "D",
+    "material": "InP",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 1,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  },
+  {
+    "job": "D_inp_k12_relax_j2",
+    "layer": "D",
+    "material": "InP",
+    "k": 12,
+    "degauss": 0.02,
+    "dft": "PBE",
+    "mode": 2,
+    "h": 0.01,
+    "cell": "prim",
+    "files": [
+      "m.in",
+      "p.in"
+    ]
+  }
 ]
