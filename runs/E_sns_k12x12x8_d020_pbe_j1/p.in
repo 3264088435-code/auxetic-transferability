@@ -1,0 +1,44 @@
+&CONTROL
+  calculation = 'scf'
+  prefix =   'sns'
+  outdir =   './tmp'
+  pseudo_dir =   './pseudo'
+  tprnfor = .true.
+  tstress = .true.
+  disk_io =   'none'
+/
+&SYSTEM
+  ibrav = 0
+  nat = 8
+  ntyp = 2
+  ecutwfc = 60
+  ecutrho = 480
+  occupations =   'smearing'
+  smearing =   'mv'
+  degauss = 0.02
+/
+&ELECTRONS
+  conv_thr = 1e-8
+  mixing_beta = 0.4
+/
+ATOMIC_SPECIES
+Sn 118.71 Sn.pbe-dn-kjpaw_psl.1.0.0.UPF
+S  32.065 S.pbe-n-kjpaw_psl.1.0.0.UPF
+
+CELL_PARAMETERS bohr
+      7.72980000     0.00000000     0.00000000
+      0.00000000    22.51492000     0.00000000
+      0.00000000     0.00000000     7.72950000
+
+ATOMIC_POSITIONS crystal
+  Sn   0.000000   0.128218   0.750000
+  Sn   0.000000   0.871782   0.250000
+  Sn   0.500000   0.628218   0.750000
+  Sn   0.500000   0.371782   0.250000
+  S    0.000000   0.346126   0.750000
+  S    0.000000   0.653875   0.250000
+  S    0.500000   0.846126   0.750000
+  S    0.500000   0.153875   0.250000
+
+K_POINTS automatic
+12 12 8 0 0 0
