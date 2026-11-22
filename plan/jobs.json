@@ -2024,5 +2024,327 @@
   ],
   "occ": "fixed",
   "note": "vc-relax at k6 to get our own equilibrium cell before the k ladder"
+ },
+ {
+  "job": "H_sns_pnma_k06_pbe_j0",
+  "layer": "H",
+  "material": "SnS",
+  "k": "6x6x6",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 0,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k06_pbe_j1",
+  "layer": "H",
+  "material": "SnS",
+  "k": "6x6x6",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 1,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k06_pbe_j2",
+  "layer": "H",
+  "material": "SnS",
+  "k": "6x6x6",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 2,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k06_pbe_j3",
+  "layer": "H",
+  "material": "SnS",
+  "k": "6x6x6",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 3,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k06_pbe_j4",
+  "layer": "H",
+  "material": "SnS",
+  "k": "6x6x6",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 4,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k06_pbe_j5",
+  "layer": "H",
+  "material": "SnS",
+  "k": "6x6x6",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 5,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k12_pbe_j0",
+  "layer": "H",
+  "material": "SnS",
+  "k": "12x12x12",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 0,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k12_pbe_j1",
+  "layer": "H",
+  "material": "SnS",
+  "k": "12x12x12",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 1,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k12_pbe_j2",
+  "layer": "H",
+  "material": "SnS",
+  "k": "12x12x12",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 2,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k12_pbe_j3",
+  "layer": "H",
+  "material": "SnS",
+  "k": "12x12x12",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 3,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k12_pbe_j4",
+  "layer": "H",
+  "material": "SnS",
+  "k": "12x12x12",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 4,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k12_pbe_j5",
+  "layer": "H",
+  "material": "SnS",
+  "k": "12x12x12",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 5,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k16_pbe_j0",
+  "layer": "H",
+  "material": "SnS",
+  "k": "16x16x16",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 0,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k16_pbe_j1",
+  "layer": "H",
+  "material": "SnS",
+  "k": "16x16x16",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 1,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k16_pbe_j2",
+  "layer": "H",
+  "material": "SnS",
+  "k": "16x16x16",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 2,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k16_pbe_j3",
+  "layer": "H",
+  "material": "SnS",
+  "k": "16x16x16",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 3,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k16_pbe_j4",
+  "layer": "H",
+  "material": "SnS",
+  "k": "16x16x16",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 4,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "H_sns_pnma_k16_pbe_j5",
+  "layer": "H",
+  "material": "SnS",
+  "k": "16x16x16",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": 5,
+  "h": 0.01,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "m.in",
+   "p.in"
+  ],
+  "occ": "fixed",
+  "note": "k ladder on our own PBE equilibrium cell from layer G vc-relax"
+ },
+ {
+  "job": "G_sns_pnma_k12chk",
+  "layer": "G",
+  "material": "SnS",
+  "k": "12x12x12",
+  "degauss": null,
+  "dft": "PBE",
+  "mode": -2,
+  "h": 0.0,
+  "cell": "Pnma_vcrel_k6",
+  "files": [
+   "s0.in"
+  ],
+  "occ": "fixed",
+  "note": "zero-strain re-check on the vc-relaxed cell at k12 before accepting the ladder"
  }
 ]
